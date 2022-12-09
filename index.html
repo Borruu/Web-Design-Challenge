@@ -22,7 +22,7 @@
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand p-3" href="#">Home</a>
+        <a class="navbar-brand p-3" href="index.html">Home</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,21 +50,33 @@
                 Plots
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Max Temp</a></li>
-                <li><a class="dropdown-item" href="#">Humidity</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Cloudiness</a>
+                  <a class="dropdown-item" href="visualisations/temp.html"
+                    >Max Temp</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Wind Speed</a>
+                  <a class="dropdown-item" href="visualisations/humidity.html"
+                    >Humidity</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="visualisations/cloudiness.html"
+                    >Cloudiness</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="visualisations/wind.html"
+                    >Wind Speed</a
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-item p-3">
-              <a class="nav-link" href="#">Comparison</a>
+              <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item p-3">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -73,10 +85,46 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <!-- Start of Visualisations imageNav Area -->
-    <!-- End of the Visualisations imageNav Area -->
-    <!-- End of container -->
-
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-8">
+          <h1>Summary</h1>
+          <hr />
+          <p>Summary text and image here</p>
+        </div>
+        <div class="col-4">
+          <h2>Visualisations</h2>
+          <hr />
+          <div class="row">
+            <div class="col-6">
+              <a href="visualisations/temp.html">
+                <img class="img-fluid" src="assets/images/Fig1.png" />
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="visualisations/humidity.html">
+                <img class="img-fluid" src="assets/images/Fig2.png" />
+              </a>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a href="visualisations/cloudiness.html">
+                  <img class="img-fluid" src="assets/images/Fig3.png" />
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="visualisations/wind.html">
+                  <img class="img-fluid" src="assets/images/Fig4.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Start of Visualisations imageNav Area -->
+        <!-- End of the Visualisations imageNav Area -->
+      </div>
+      <!-- End of container -->
+    </div>
     <!-- jQuery CDN -->
     <script
       type="text/javascript"
