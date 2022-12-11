@@ -6,6 +6,63 @@ body {
   );
   color: #fafafa;
 }
-navbar {
-  background-color: ;
+.navbar {
+  background-color: #fafafa;
+}
+.sum-bg {
+  /* margin-right: 10px; */
+  background-color: rgba(250, 250, 250, 0.8);
+
+  color: rgb(63, 76, 119);
+  /* padding: 15px; */
+}
+.vis-bg {
+  /* margin-left: 10px; */
+  background-color: rgba(250, 250, 250, 0.8);
+
+  color: rgb(63, 76, 119);
+  padding: 15px;
+
+  /* box-shadow: inset; */
+}
+.vis-tile {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+.vis-tile:hover {
+  /* border: solid; */
+  cursor: pointer;
+  /* border-color: rgb(255, 255, 255); */
+  border-radius: 25px;
+  box-shadow: 0 0 6px 1px, 0 0 6px 1px inset;
+  transition: 4ms ease-in-out;
+}
+#vh2-index {
+  text-align: left;
+}
+.tb-bg {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  margin: 10px;
+}
+.cmp-h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+.content-box {
+  text-align: justify;
+}
+
+.content-img {
+  display: inline;
+  position: relative;
+}
+@media screen {
+}
+@media (max-width: 992px) {
+  .v2nav {
+    color: #fafafa;
+    background-color: rgb(32, 38, 57);
+  }
 }

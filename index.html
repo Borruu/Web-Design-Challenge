@@ -20,11 +20,11 @@
 
   <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg v2nav">
       <div class="container-fluid">
-        <a class="navbar-brand p-3" href="index.html">Home</a>
+        <a class="navbar-brand v2nav p-3" href="index.html">Home</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler v2nav"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -32,7 +32,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon v2nav"></span>
         </button>
         <div
           class="collapse navbar-collapse d-flex-inline flex-row-reverse"
@@ -85,44 +85,57 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div class="container-lg">
-      <div class="row">
-        <div class="col-8">
-          <h1>Summary</h1>
-          <hr />
-          <p>Summary text and image here</p>
+    <div class="container-lg overflow-hidden">
+      <br />
+      <!-- <div class="d-grid gap-1"> -->
+      <div class="row gx-5">
+        <div class="col-lg-8 sum-bg">
+          <div class="p-3">
+            <h1>Summary</h1>
+            <hr />
+            <p>
+              The purpose of this project was to analyse the relationship
+              between weather and proximity to the equator. To do this, we used
+              OpenWeatherMAp API to pull create a dataset with over 500
+              cities.<br />
+            </p>
+          </div>
         </div>
-        <div class="col-4">
-          <h2>Visualisations</h2>
-          <hr />
-          <div class="row">
-            <div class="col-6">
-              <a href="visualisations/temp.html">
-                <img class="img-fluid" src="assets/images/Fig1.png" />
-              </a>
-            </div>
-            <div class="col-6">
-              <a href="visualisations/humidity.html">
-                <img class="img-fluid" src="assets/images/Fig2.png" />
-              </a>
-            </div>
+        <!-- <div class="col-lg-1"></div> -->
+        <div class="col-lg-4 vis-bg">
+          <div class="p-3">
+            <h2 id="vh2-index">Visualisations</h2>
+            <hr />
             <div class="row">
-              <div class="col-6">
+              <div class="col-3 col-lg-6 vis-tile">
+                <a href="visualisations/temp.html">
+                  <img class="img-fluid" src="assets/images/Fig1.png" />
+                </a>
+              </div>
+              <div class="col-3 col-lg-6 vis-tile">
+                <a href="visualisations/humidity.html">
+                  <img class="img-fluid" src="assets/images/Fig2.png" />
+                </a>
+              </div>
+              <!-- <div class="row-lg"> -->
+              <div class="col-3 col-lg-6 vis-tile">
                 <a href="visualisations/cloudiness.html">
                   <img class="img-fluid" src="assets/images/Fig3.png" />
                 </a>
               </div>
-              <div class="col-6">
+              <div class="col-3 col-lg-6 vis-tile">
                 <a href="visualisations/wind.html">
                   <img class="img-fluid" src="assets/images/Fig4.png" />
                 </a>
               </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>
         <!-- Start of Visualisations imageNav Area -->
         <!-- End of the Visualisations imageNav Area -->
       </div>
+      <!-- </div> -->
       <!-- End of container -->
     </div>
     <!-- jQuery CDN -->
