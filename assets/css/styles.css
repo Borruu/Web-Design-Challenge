@@ -32,12 +32,10 @@ body {
   border-radius: 10px;
 }
 .vis-tile:hover {
-  /* border: solid; */
   cursor: pointer;
-  /* border-color: rgb(255, 255, 255); */
   border-radius: 25px;
   box-shadow: 0 0 6px 1px, 0 0 6px 1px inset;
-  transition: 4ms ease-in-out;
+  transition: 400ms all ease-in-out;
 }
 
 .tb-bg {
@@ -60,8 +58,7 @@ body {
   position: relative;
   float: left;
 }
-@media screen {
-}
+
 @media (max-width: 992px) {
   body {
     background: rgba(250, 250, 250, 1);
