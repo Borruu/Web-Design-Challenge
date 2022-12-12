@@ -11,7 +11,8 @@ body {
 }
 .sum-bg {
   /* margin-right: 10px; */
-  background-color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(250, 250, 250, 1);
+  padding: 10px;
 
   color: rgb(63, 76, 119);
   /* padding: 15px; */
@@ -38,9 +39,7 @@ body {
   box-shadow: 0 0 6px 1px, 0 0 6px 1px inset;
   transition: 4ms ease-in-out;
 }
-#vh2-index {
-  text-align: left;
-}
+
 .tb-bg {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
@@ -53,16 +52,47 @@ body {
 .content-box {
   text-align: justify;
 }
-
+.content-box img {
+  object-fit: contain;
+}
 .content-img {
   display: inline;
   position: relative;
+  float: left;
 }
 @media screen {
 }
 @media (max-width: 992px) {
+  body {
+    background: rgba(250, 250, 250, 1);
+    /* color: rgb(32, 38, 57); */
+    color: rgb(63, 76, 119);
+  }
+  .v2nav-main {
+    background: linear-gradient(
+      112.1deg,
+      rgb(32, 38, 57) 11.4%,
+      rgb(63, 76, 119) 70.2%
+    );
+  }
   .v2nav {
     color: #fafafa;
-    background-color: rgb(32, 38, 57);
+    background-color: rgba(32, 38, 57, 0);
+  }
+  .v2nav button {
+    color: #fafafa;
+    border: solid;
+    border-color: #fafafa;
+  }
+  .v2nav:hover {
+    cursor: pointer;
+    color: #f7d307;
+  }
+  .in-vs2bg {
+    background-color: rgba(250, 250, 250, 1);
+    color: rgb(63, 76, 119);
+  }
+  .tb-bg {
+    box-shadow: 0 0 6px 1px;
   }
 }

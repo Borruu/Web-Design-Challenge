@@ -20,11 +20,11 @@
 
   <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg v2nav-main">
       <div class="container-fluid">
-        <a class="navbar-brand p-3" href="index.html">Home</a>
+        <a class="navbar-brand v2nav p-2" href="index.html">Home</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler v2nav"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -32,16 +32,16 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon v2nav"></span>
         </button>
         <div
-          class="collapse navbar-collapse d-flex-inline flex-row-reverse"
+          class="collapse navbar-collapse d-flex-inline flex-row-reverse v2nav"
           id="navbarNavDropdown"
         >
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown p-3">
+          <ul class="navbar-nav v2nav">
+            <li class="nav-item dropdown p-2 v2nav">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle v2nav"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -49,34 +49,38 @@
               >
                 Plots
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu v2nav">
                 <li>
-                  <a class="dropdown-item" href="visualisations/temp.html"
+                  <a class="dropdown-item v2nav" href="visualisations/temp.html"
                     >Max Temp</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="visualisations/humidity.html"
+                  <a
+                    class="dropdown-item v2nav"
+                    href="visualisations/humidity.html"
                     >Humidity</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="visualisations/cloudiness.html"
+                  <a
+                    class="dropdown-item v2nav"
+                    href="visualisations/cloudiness.html"
                     >Cloudiness</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="visualisations/wind.html"
+                  <a class="dropdown-item v2nav" href="visualisations/wind.html"
                     >Wind Speed</a
                   >
                 </li>
               </ul>
             </li>
-            <li class="nav-item p-3">
-              <a class="nav-link" href="comparison.html">Comparison</a>
+            <li class="nav-item p-2 v2nav">
+              <a class="nav-link v2nav" href="comparison.html">Comparison</a>
             </li>
-            <li class="nav-item p-3">
-              <a class="nav-link" href="data.html">Data</a>
+            <li class="nav-item p-2 v2nav">
+              <a class="nav-link v2nav" href="data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -85,7 +89,7 @@
     <!-- End of navbar -->
     <br />
     <!-- Start of container -->
-    <div class="container overflow-hidden vis-bg">
+    <div class="container-lg overflow-hidden">
       <div class="row">
         <div class="col-12">
           <h1>Comparison: Latitude vs. _ _ _ :</h1>
@@ -102,7 +106,7 @@
           </a>
         </div>
         <div class="col-lg-6 text-center vis-tile">
-          <h3 class="cmp-h3">vs Humidity</h3>
+          <h3 class="cmp-h3">vs. Humidity</h3>
           <a href="visualisations/humidity.html">
             <img class="img-fluid" src="assets/images/Fig2.png" />
           </a>
@@ -125,6 +129,7 @@
           </a>
         </div>
       </div>
+      <br />
     </div>
     <!-- End of container -->
 
